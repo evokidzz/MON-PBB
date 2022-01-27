@@ -1,6 +1,6 @@
 <?php
-	@session_start();
-	include "inc/koneksi.php";  
+@session_start();
+include "inc/koneksi.php";
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Login | SIMON Rekap Surat</title>
+	<title>Login | MonPel PBB-P2</title>
 	<link rel="icon" href="dist/img/logo-tnh-laut.png">
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,12 +35,12 @@
 				<div class="login-logo">
 					<a href="login.php">
 						<font color="black">
-							<b>SIMON REKAP SURAT</b></br><b> DESA NUSA INDAH </b>
+							<b>MonPel PBB-P2</b></br><b> BPKPAD </b>
 						</font>
 					</a>
 				</div>
 				<center>
-					 <img src="dist/img/logo-tnh-laut.png" width=110px />
+					<img src="dist/img/logo_banjar.png" width=110px />
 					<br>
 					<br>
 				</center>
@@ -69,19 +69,19 @@
 						</div>
 				</form>
 
-				</div>
 			</div>
 		</div>
-		<!-- /.login-box -->
+	</div>
+	<!-- /.login-box -->
 
-		<!-- jQuery -->
-		<script src="plugins/jquery/jquery.min.js"></script>
-		<!-- Bootstrap 4 -->
-		<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<!-- AdminLTE App -->
-		<script src="dist/js/adminlte.min.js"></script>
-		<!-- Alert -->
-		<script src="plugins/alert.js"></script>
+	<!-- jQuery -->
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<!-- Bootstrap 4 -->
+	<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- AdminLTE App -->
+	<script src="dist/js/adminlte.min.js"></script>
+	<!-- Alert -->
+	<script src="plugins/alert.js"></script>
 
 </body>
 
@@ -89,39 +89,39 @@
 
 <?php
 
-if (isset($_POST['btnLogin'])) {  
+if (isset($_POST['btnLogin'])) {
 	//anti inject sql
-	$username=mysqli_real_escape_string($koneksi,$_POST['username']);
-	$password=mysqli_real_escape_string($koneksi,$_POST['password']);
+	$username = mysqli_real_escape_string($koneksi, $_POST['username']);
+	$password = mysqli_real_escape_string($koneksi, $_POST['password']);
 
 	//query login
 	$sql_login = "SELECT * FROM tb_pengguna WHERE BINARY username='$username' AND password='$password'";
 	$query_login = mysqli_query($koneksi, $sql_login);
-	$data_login = mysqli_fetch_array($query_login,MYSQLI_BOTH);
+	$data_login = mysqli_fetch_array($query_login, MYSQLI_BOTH);
 	$jumlah_login = mysqli_num_rows($query_login);
 
 
-	if ($jumlah_login ==1 ){
+	if ($jumlah_login == 1) {
 		// session_start();
-		$_SESSION["ses_id"]=$data_login["id_pengguna"];
-		$_SESSION["ses_nama"]=$data_login["nama_pengguna"];
-		$_SESSION["ses_username"]=$data_login["username"];
-		$_SESSION["ses_password"]=$data_login["password"];
-		$_SESSION["ses_jabatan"]=$data_login["jabatan"];
-		$_SESSION["ses_level"]=$data_login["level"];
-	
+		$_SESSION["ses_id"] = $data_login["id_pengguna"];
+		$_SESSION["ses_nama"] = $data_login["nama_pengguna"];
+		$_SESSION["ses_username"] = $data_login["username"];
+		$_SESSION["ses_password"] = $data_login["password"];
+		$_SESSION["ses_jabatan"] = $data_login["jabatan"];
+		$_SESSION["ses_level"] = $data_login["level"];
+
 		echo "<script>
 			Swal.fire({title: 'Login Berhasil',text: '',icon: 'success',confirmButtonText: 'OK'
 			}).then((result) => {if (result.value)
 				{window.location = 'index.php';}
 			})</script>";
-		}else{
+	} else {
 		echo "<script>
 			Swal.fire({title: 'Login Gagal',text: '',icon: 'error',confirmButtonText: 'OK'
 			}).then((result) => {if (result.value)
 				{window.location = 'login.php';}
 			})</script>";
-		}
-		}
+	}
+}
 
-		?>
+?>
