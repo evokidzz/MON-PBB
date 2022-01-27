@@ -27,7 +27,7 @@ while ($data = $sql->fetch_assoc()) {
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SIMON Rekap Surat</title>
+	<title>MonPel PBB-P2</title>
 	<link rel="icon" href="dist/img/logo-tnh-laut.png">
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,8 +94,8 @@ while ($data = $sql->fetch_assoc()) {
 
 			<!-- Brand Logo -->
 			<a href="index.php" class="brand-link">
-				<img src="dist/img/logo.png" alt="AdminLTE Logo" class="brand-image" style="opacity: .8">
-				<span class="brand-text"> SIMON Rekap Surat</span>
+				<img src="dist/img/logo_banjar.png" alt="AdminLTE Logo" class="brand-image" style="opacity: 10">
+				<span class="brand-text">MonPel PBB-P2</span>
 			</a>
 
 			<!-- Sidebar -->
@@ -104,7 +104,7 @@ while ($data = $sql->fetch_assoc()) {
 
 				<div class="user-panel mt-2 pb-2 mb-2 d-flex">
 					<div class="image">
-						<img src="dist/img/user.png" class="img-circle elevation-1" alt="User Image">
+						<img src="dist/img/logo_user.png" class="img-circle elevation-1" alt="User Image">
 					</div>
 
 					<div class="info">
