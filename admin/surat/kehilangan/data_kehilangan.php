@@ -77,7 +77,7 @@ $data = mysqli_fetch_array($sql_per_id); { ?>
           }
           ?>
           </tbody>
-          </tfoot>
+
         </table>
       </div>
     </div>
