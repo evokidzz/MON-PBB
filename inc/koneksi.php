@@ -1,5 +1,5 @@
 <?php
-$koneksi = new mysqli("localhost", "root", "", "mon_pbb");
+$koneksi = new mysqli("localhost", "root", "", "adm_desa");
 ?>
 
 <!-- end -->
