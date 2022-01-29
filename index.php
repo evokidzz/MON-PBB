@@ -55,6 +55,7 @@ while ($data = $sql->fetch_assoc()) {
 	<link href="assets/css/custom-styles.css" rel="stylesheet" />
 	<!-- Google Fonts-->
 	<link href='assets/fonts/Open+Sans' rel='stylesheet' type='text/css' />
+
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -642,7 +643,8 @@ while ($data = $sql->fetch_assoc()) {
 		<!-- /.control-sidebar -->
 	</div>
 	<!-- ./wrapper -->
-
+	<!-- Chart.js -->
+	<script type="text/javascript" src="plugins/chartjs/Chart.js"></script>
 	<!-- jQuery -->
 	<script src="plugins/jquery/jquery.min.js"></script>
 	<!-- Bootstrap 4 -->
@@ -664,6 +666,7 @@ while ($data = $sql->fetch_assoc()) {
 	<script src="plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
 	<script src="plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
 	<script src="plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+
 
 	<script>
 		$(function() {
