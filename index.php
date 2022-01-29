@@ -28,7 +28,7 @@ while ($data = $sql->fetch_assoc()) {
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>MonPel PBB-P2</title>
-	<link rel="icon" href="dist/img/logo-tnh-laut.png">
+	<link rel="icon" href="dist/img/logo_banjar.png">
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
