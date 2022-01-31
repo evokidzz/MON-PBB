@@ -149,9 +149,9 @@ while ($data = $sql->fetch_assoc()) {
 								<ul class="nav nav-treeview">
 
 									<li class="nav-item">
-										<a href="?page=data-penduduk" class="nav-link">
+										<a href="?page=data-wp" class="nav-link">
 											<i class="far fa-circle nav-icon"></i>
-											<p>Data Penduduk</p>
+											<p>Data Wajib Pajak</p>
 										</a>
 									</li>
 
@@ -477,15 +477,15 @@ while ($data = $sql->fetch_assoc()) {
 								include "admin/pengguna/del_pengguna.php";
 								break;
 
-								//master data - penduduk
-							case 'data-penduduk':
-								include "admin/penduduk/data_penduduk.php";
+								//master data - wp
+							case 'data-wp':
+								include "admin/wp/data_wp.php";
 								break;
-							case 'add-penduduk':
-								include "admin/penduduk/add_penduduk.php";
+							case 'add-wp':
+								include "admin/wp/add_wp.php";
 								break;
-							case 'edit-penduduk':
-								include "admin/penduduk/edit_penduduk.php";
+							case 'edit-wp':
+								include "admin/wp/edit_wp.php";
 								break;
 
 
