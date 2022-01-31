@@ -487,6 +487,9 @@ while ($data = $sql->fetch_assoc()) {
 							case 'edit-wp':
 								include "admin/wp/edit_wp.php";
 								break;
+							case 'del-wp':
+								include "admin/wp/del_wp.php";
+								break;
 
 
 								//pelayanan umum - domisili							
