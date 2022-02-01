@@ -10,56 +10,56 @@
       <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="nik">NIK/NPWP</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK/NPWP" style="text-transform: uppercase;" required>
+          <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK/NPWP" required>
         </div>
       </div>
 
       <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="nama">NAMA</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="nama" name="nama" placeholder="NAMA" style="text-transform: uppercase;" required>
+          <input type="text" class="form-control" id="nama" name="nama" placeholder="NAMA" required>
         </div>
       </div>
 
       <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="alamat">ALAMAT</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="alamat" name="alamat" placeholder="ALAMAT" style="text-transform: uppercase;" required>
+          <input type="text" class="form-control" id="alamat" name="alamat" placeholder="ALAMAT" required>
         </div>
       </div>
 
       <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="desa">DESA/KELURAHAN</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="desa" name="desa" placeholder="DESA" style="text-transform: uppercase;" required>
+          <input type="text" class="form-control" id="desa" name="desa" placeholder="DESA" required>
         </div>
       </div>
 
       <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="kec">KECAMATAN</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="kec" name="kec" placeholder="KECAMATAN" style="text-transform: uppercase;" required>
+          <input type="text" class="form-control" id="kec" name="kec" placeholder="KECAMATAN" required>
         </div>
-      </div>     
+      </div>
 
       <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="kab">KABUPATEN</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="kab" name="kab" placeholder="KABUPATEN" style="text-transform: uppercase;" required>
+          <input type="text" class="form-control" id="kab" name="kab" placeholder="KABUPATEN" required>
         </div>
-      </div> 
+      </div>
 
       <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="prov">PROVINSI</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="prov" name="prov" placeholder="PROVINSI" style="text-transform: uppercase;" required>
+          <input type="text" class="form-control" id="prov" name="prov" placeholder="PROVINSI" required>
         </div>
-      </div>      
+      </div>
 
       <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="pekerjaan">PEKERJAAN</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" placeholder="PEKERJAAN" style="text-transform: uppercase;" required>
+          <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" placeholder="PEKERJAAN" required>
         </div>
       </div>
 
