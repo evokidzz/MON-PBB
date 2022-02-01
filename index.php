@@ -457,10 +457,10 @@ while ($data = $sql->fetch_assoc()) {
 						switch ($hal) {
 								//Klik Halaman Home Pengguna
 							case 'admin':
-								include "home/admin.php";
+								include "admin/wp/data_wp.php";
 								break;
 							case 'sekretaris':
-								include "home/sekretaris.php";
+								include "admin/wp/data_wp.php";
 								break;
 
 								//Pengguna
@@ -599,11 +599,19 @@ while ($data = $sql->fetch_assoc()) {
 							case 'edit-profil':
 								include "admin/profil/edit_profil.php";
 								break;
+
+								//pejabat
 							case 'data-pejabat':
 								include "admin/profil/data_pejabat.php";
 								break;
+							case 'add-pejabat':
+								include "admin/profil/add_pejabat.php";
+								break;
 							case 'edit-pejabat':
 								include "admin/profil/edit_pejabat.php";
+								break;
+							case 'del-pejabat':
+								include "admin/profil/pejabat/del_pejabat.php";
 								break;
 
 
@@ -615,9 +623,9 @@ while ($data = $sql->fetch_assoc()) {
 					} else {
 						// Auto Halaman Home Pengguna
 						if ($data_level == "Administrator") {
-							include "home/admin.php";
+							include "admin/profil/data_pejabat.php";
 						} elseif ($data_level == "Sekretaris") {
-							include "home/sekretaris.php";
+							include "admin/profil/data_pejabat.php";
 						}
 					}
 					?>
