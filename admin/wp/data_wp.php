@@ -18,7 +18,7 @@ $data = mysqli_fetch_array($sql_per_id); { ?>
         <div>
           <a href="?page=add-wp" class="btn btn-primary">
             <i class="fa fa-edit"></i> Tambah Data</a>
-          <a href="admin\wp\cetak_lap_wp.php" target="_blank" title="Cetak" class="btn btn-success"><i class="fa fa-print"></i> Cetak Laporan</a>
+          <a href="admin\cetak\wp\cetak_lap_wp.php" target="_blank" title="Cetak" class="btn btn-success"><i class="fa fa-print"></i> Cetak Laporan</a>
         </div>
         <br>
         <table id="example1" method="get" class="table table-bordered table-striped">
