@@ -31,7 +31,7 @@ class PDF extends FPDF
         $this->text(115, 33, 'Kalimantan Selatan Kode Pos 70611');
 
         $this->SetFont('Arial', 'B', 12);
-        $this->text(103, 37, 'Telepon (0511) 4721358, Faksimile (0511) 4721027');
+        $this->text(103, 38, 'Telepon (0511) 4721358, Faksimile (0511) 4721027');
 
         // Line break
         $this->Ln(20);
