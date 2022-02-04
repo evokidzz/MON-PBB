@@ -10,7 +10,7 @@
 			<div>
 				<a href="?page=add-pejabat" class="btn btn-primary">
 					<i class="fa fa-edit"></i> Tambah Data</a>
-				<a href="admin\wp\wp\cetak_lap_wp.php" target="_blank" title="Cetak" class="btn btn-success"><i class="fa fa-print">
+				<a href="admin\cetak\pejabat\cetak_lap_pejabat.php" target="_blank" title="Cetak" class="btn btn-success"><i class="fa fa-print">
 					</i> Cetak Data</a>
 			</div>
 			<br>
