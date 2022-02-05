@@ -1,4 +1,4 @@
-<div class="card card-primary">
+<div class="card card-dark">
   <div class="card-header">
     <h3 class="card-title">
       <i class="fa fa-edit"></i> Tambah Data Wajib Pajak
@@ -52,7 +52,7 @@
       <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="prov">PROVINSI</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" id="prov" name="prov" placeholder="PROVINSI" required>
+          <input type="text" class="form-control" id="prov" name="prov" placeholder="CONTOH : KAL-SEL" required>
         </div>
       </div>
 

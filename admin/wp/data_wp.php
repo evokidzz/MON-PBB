@@ -4,7 +4,7 @@ $sql_per_id = mysqli_query($koneksi, "SELECT * FROM tb_wp WHERE nik = '$id'") or
 $data = mysqli_fetch_array($sql_per_id); { ?>
 
 
-  <div class="card card-info">
+  <div class="card card-dark">
     <div class="card-header">
       <h3 class="card-title">
         <i class="fa fa-table"></i> Data Wajib Pajak
