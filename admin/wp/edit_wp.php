@@ -7,7 +7,7 @@ if (isset($_GET['kode'])) {
 }
 ?>
 
-<div class="card card-dark">
+<div class="card card-primary">
     <div class="card-header">
         <h3 class="card-title">
             <i class="fa fa-edit"></i> Ubah Data Wajib Pajak
@@ -29,6 +29,7 @@ if (isset($_GET['kode'])) {
                     <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $data_cek['nama']; ?>" />
                 </div>
             </div>
+
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">ALAMAT</label>
                 <div class="col-sm-8">
@@ -83,7 +84,7 @@ if (isset($_GET['kode'])) {
 <?php
 
 if (isset($_POST['Ubah'])) {
-    $sql_ubah = "UPDATE tb_wp SET  
+    $sql_ubah = "UPDATE tb_wp SET 
     nama='" . $_POST['nama'] . "', 
     alamat='" . $_POST['alamat'] . "',
     desa='" . $_POST['desa'] . "', 
