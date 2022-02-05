@@ -17,7 +17,7 @@ include "inc/koneksi.php";
 $sql = $koneksi->query("SELECT * from tb_profil");
 while ($data = $sql->fetch_assoc()) {
 
-	$nama = $data['nama_desa'];
+	$nama = $data['nama_kantor'];
 }
 ?>
 
@@ -62,7 +62,7 @@ while ($data = $sql->fetch_assoc()) {
 	<!-- Site wrapper -->
 	<div class="wrapper">
 		<!-- Navbar -->
-		<nav class="main-header navbar navbar-expand navbar-blue navbar-light">
+		<nav class="main-header navbar navbar-expand navbar-dark navbar-light">
 			<!-- Left navbar links -->
 			<ul class="navbar-nav">
 				<li class="nav-item">
@@ -142,7 +142,7 @@ while ($data = $sql->fetch_assoc()) {
 								<a href="#" class="nav-link">
 									<i class="nav-icon fas fa-flag"></i>
 									<p>
-										Master Data
+										MASTER DATA
 										<i class="right fas fa-angle-left"></i>
 									</p>
 								</a>
@@ -172,44 +172,44 @@ while ($data = $sql->fetch_assoc()) {
 						<a href="#" class="nav-link">
 							<i class="nav-icon fas fa-flag"></i>
 							<p>
-								Pelayanan Umum
+								JENIS PELAYANAN
 								<i class="right fas fa-angle-left"></i>
 							</p>
 						</a>
 						<ul class="nav nav-treeview">
 
 							<li class="nav-item">
-								<a href="?page=data-domisili" class="nav-link">
+								<a href="?page=data-baru" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Keterangan Domisili</p>
+									<p>Daftar Baru</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=data-tdkmampu" class="nav-link">
+								<a href="?page=data-mutasi" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Tidak Mampu</p>
+									<p>Mutasi</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=data-usaha" class="nav-link">
+								<a href="?page=data-hapus" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Usaha</p>
+									<p>Penghapusan</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=data-kematian" class="nav-link">
+								<a href="?page=data-betul" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Keterangan Kematian</p>
+									<p>Pembetulan</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=data-kehilangan" class="nav-link">
+								<a href="?page=data-salinan" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Kehilangan</p>
+									<p>Salinan</p>
 								</a>
 							</li>
 							<ul class="nav nav-treeview">
@@ -228,44 +228,44 @@ while ($data = $sql->fetch_assoc()) {
 						<a href="#" class="nav-link">
 							<i class="nav-icon fas fa-flag"></i>
 							<p>
-								Laporan
+								LAPORAN
 								<i class="right fas fa-angle-left"></i>
 							</p>
 						</a>
 						<ul class="nav nav-treeview">
 
 							<li class="nav-item">
-								<a href="?page=cetak-domisili" class="nav-link">
+								<a href="?page=cetak-baru" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Keterangan Domisili</p>
+									<p>Daftar Baru</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=cetak-tdkmampu" class="nav-link">
+								<a href="?page=cetak-mutasi" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Tidak Mampu</p>
+									<p>Mutasi</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=cetak-usaha" class="nav-link">
+								<a href="?page=cetak-hapus" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Usaha</p>
+									<p>Penghapusan</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=cetak-kematian" class="nav-link">
+								<a href="?page=cetak-betul" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Keterangan Kematian</p>
+									<p>Pembetulan</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=cetak-kehilangan" class="nav-link">
+								<a href="?page=cetak-salinan" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Kehilangan</p>
+									<p>Salinan</p>
 								</a>
 							</li>
 
@@ -279,7 +279,7 @@ while ($data = $sql->fetch_assoc()) {
 						<a href="?page=data-profil" class="nav-link">
 							<i class="nav-icon far fa fa-bars"></i>
 							<p>
-								Profil Desa
+								Profil Instansi
 							</p>
 						</a>
 					</li>
@@ -289,7 +289,7 @@ while ($data = $sql->fetch_assoc()) {
 						<a href="?page=data-pejabat" class="nav-link">
 							<i class="nav-icon far fa fa-user"></i>
 							<p>
-								Pejabat Desa
+								Pejabat Instansi
 							</p>
 						</a>
 					</li>
@@ -327,37 +327,37 @@ while ($data = $sql->fetch_assoc()) {
 						<ul class="nav nav-treeview">
 
 							<li class="nav-item">
-								<a href="?page=data-domisili" class="nav-link">
+								<a href="?page=data-baru" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Keterangan Domisili</p>
+									<p>Daftar Baru</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=data-tdkmampu" class="nav-link">
+								<a href="?page=data-mutasi" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Tidak Mampu</p>
+									<p>Mutasi</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=data-usaha" class="nav-link">
+								<a href="?page=data-hapus" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Usaha</p>
+									<p>Penghapusan</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=data-kematian" class="nav-link">
+								<a href="?page=data-betul" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Keterangan Kematian</p>
+									<p>Pembetulan</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=data-kehilangan" class="nav-link">
+								<a href="?page=data-salinan" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Kehilangan</p>
+									<p>Salinan</p>
 								</a>
 							</li>
 							<ul class="nav nav-treeview">
@@ -383,37 +383,37 @@ while ($data = $sql->fetch_assoc()) {
 						<ul class="nav nav-treeview">
 
 							<li class="nav-item">
-								<a href="?page=cetak-domisili" class="nav-link">
+								<a href="?page=cetak-baru" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Keterangan Domisili</p>
+									<p>Daftar Baru</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=cetak-tdkmampu" class="nav-link">
+								<a href="?page=cetak-mutasi" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Tidak Mampu</p>
+									<p>Mutasi</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=cetak-usaha" class="nav-link">
+								<a href="?page=cetak-hapus" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Usaha</p>
+									<p>Penghapusan</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=cetak-kematian" class="nav-link">
+								<a href="?page=cetak-betul" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Keterangan Kematian</p>
+									<p>Pembetulan</p>
 								</a>
 							</li>
 
 							<li class="nav-item">
-								<a href="?page=cetak-kehilangan" class="nav-link">
+								<a href="?page=cetak-salinan" class="nav-link">
 									<i class="far fa-circle nav-icon"></i>
-									<p>Surat Ket.Kehilangan</p>
+									<p>Salinan</p>
 								</a>
 							</li>
 
@@ -491,44 +491,49 @@ while ($data = $sql->fetch_assoc()) {
 								include "admin/wp/del_wp.php";
 								break;
 
-
-								//pelayanan umum - domisili							
-							case 'data-domisili':
-								include "admin/surat/domisili/data_domisili.php";
-								break;
-							case 'add-domisili':
-								include "admin/surat/domisili/add_domisili.php";
-								break;
-							case 'del-domisili':
-								include "admin/surat/domisili/del_domisili.php";
-								break;
-							case 'edit-domisili':
-								include "admin/surat/domisili/edit_domisili.php";
-								break;
-
-								//pelayanan umum - cetak domisili							
-							case 'cetak-domisili':
-								include "admin/cetak/domisili/cetak_domisili.php";
+								//pelayanan umum - wp							
+							case 'cetak-baru':
+								include "admin/wp/cetak_lap_wp.php";
 								break;
 
 
-								//pelayanan umum - tidak mampu
-							case 'data-tdkmampu':
-								include "admin/surat/tdk_mampu/data_tdk_mampu.php";
+								//pelayanan umum - baru							
+							case 'data-baru':
+								include "admin/surat/baru/data_baru.php";
 								break;
-							case 'add-tdkmampu':
-								include "admin/surat/tdk_mampu/add_tdk_mampu.php";
+							case 'add-baru':
+								include "admin/surat/baru/add_baru.php";
 								break;
-							case 'del-tdkmampu':
-								include "admin/surat/tdk_mampu/del_tdk_mampu.php";
+							case 'del-baru':
+								include "admin/surat/baru/del_baru.php";
 								break;
-							case 'edit-tdkmampu':
-								include "admin/surat/tdk_mampu/edit_tdk_mampu.php";
+							case 'edit-baru':
+								include "admin/surat/baru/edit_baru.php";
 								break;
 
-								//pelayanan umum - cetak tidak mampu							
-							case 'cetak-tdkmampu':
-								include "admin/cetak/tdk_mampu/cetak_tdk_mampu.php";
+								//pelayanan umum - cetak baru							
+							case 'cetak-baru':
+								include "admin/cetak/baru/cetak_baru.php";
+								break;
+
+
+								//pelayanan umum - mutasi
+							case 'data-mutasi':
+								include "admin/surat/mutasi/data_mutasi.php";
+								break;
+							case 'add-mutasi':
+								include "admin/surat/mutasi/add_mutasi.php";
+								break;
+							case 'del-mutasi':
+								include "admin/surat/mutasi/del_mutasi.php";
+								break;
+							case 'edit-mutasi':
+								include "admin/surat/mutasi/edit_mutasi.php";
+								break;
+
+								//pelayanan umum - cetak mutasi							
+							case 'cetak-mutasi':
+								include "admin/cetak/mutasi/cetak_mutasi.php";
 								break;
 
 
@@ -602,16 +607,16 @@ while ($data = $sql->fetch_assoc()) {
 
 								//pejabat
 							case 'data-pejabat':
-								include "admin/profil/data_pejabat.php";
+								include "home/data_pejabat.php";
 								break;
 							case 'add-pejabat':
-								include "admin/profil/add_pejabat.php";
+								include "home/add_pejabat.php";
 								break;
 							case 'edit-pejabat':
-								include "admin/profil/edit_pejabat.php";
+								include "home/edit_pejabat.php";
 								break;
 							case 'del-pejabat':
-								include "admin/profil/pejabat/del_pejabat.php";
+								include "home/pejabat/del_pejabat.php";
 								break;
 
 
@@ -623,9 +628,9 @@ while ($data = $sql->fetch_assoc()) {
 					} else {
 						// Auto Halaman Home Pengguna
 						if ($data_level == "Administrator") {
-							include "admin/profil/data_pejabat.php";
+							include "home/data_pejabat.php";
 						} elseif ($data_level == "Sekretaris") {
-							include "admin/profil/data_pejabat.php";
+							include "home/data_pejabat.php";
 						}
 					}
 					?>
@@ -640,7 +645,7 @@ while ($data = $sql->fetch_assoc()) {
 			<div class="float-right d-none d-sm-block">
 				Copyright &copy;
 				<a target="" href="#">
-					<strong> SIMON Rekap Surat</strong>
+					<strong> MONPEL PBB-P2</strong>
 				</a>
 				All rights reserved.
 			</div>
