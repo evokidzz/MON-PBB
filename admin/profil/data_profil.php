@@ -1,4 +1,4 @@
-<div class="card card-info">
+<div class="card card-dark">
 	<div class="card-header">
 		<h3 class="card-title">
 			<i class="fa fa-table"></i> Profil Instansi
@@ -27,7 +27,7 @@
 
 						<tr>
 							<td>
-								<?php echo $data['nama_desa']; ?>
+								<?php echo $data['nama_kantor']; ?>
 							</td>
 							<td>
 								<?php echo $data['alamat']; ?>

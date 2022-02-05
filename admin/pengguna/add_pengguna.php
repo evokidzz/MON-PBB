@@ -1,4 +1,4 @@
-<div class="card card-primary">
+<div class="card card-dark">
 	<div class="card-header">
 		<h3 class="card-title">
 			<i class="fa fa-edit"></i> Tambah Data
