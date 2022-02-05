@@ -29,6 +29,7 @@ if (isset($_GET['kode'])) {
                     <input type="date" class="form-control" id="tgl_pel" name="tgl_pel" value="<?php echo $data_cek['tgl_pel']; ?>" />
                 </div>
             </div>
+
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label">NOP</label>
                 <div class="col-sm-8">
