@@ -76,8 +76,8 @@ $pdf->SetFont('Arial', 'B', 8);
 $pdf->setFillColor(222, 222, 222);
 $pdf->setXY(8, 53);
 $pdf->CELL(10, 6, 'NO', 1, 0, 'C', 1);
-$pdf->CELL(30, 6, 'NIK/NPWP', 1, 0, 'C', 1);
-$pdf->CELL(35, 6, 'NAMA', 1, 0, 'C', 1);
+$pdf->CELL(35, 6, 'NIK/NPWP', 1, 0, 'C', 1);
+$pdf->CELL(40, 6, 'NAMA', 1, 0, 'C', 1);
 $pdf->CELL(50, 6, 'ALAMAT', 1, 0, 'C', 1);
 $pdf->CELL(35, 6, 'DESA', 1, 0, 'C', 1);
 $pdf->CELL(30, 6, 'KECAMATAN', 1, 0, 'C', 1);
@@ -87,7 +87,7 @@ $pdf->CELL(28, 6, 'PEKERJAAN', 1, 0, 'C', 1);
 
 
 
-$query = "select * from tb_penduduk";
+$query = "select * from tb_wp";
 $sql = mysqli_query($koneksi, $query);
 $no = 1;
 $row = 6;
@@ -97,13 +97,13 @@ while ($data = mysqli_fetch_array($sql)) {
     $pdf->setFont('Times', '', 9);
     $pdf->setFillColor(255, 255, 255);
     $pdf->CELL(10, 6, $no, 1, 0, 'C', 1);
-    $pdf->CELL(30, 6, $data['nik'], 1, 0, 'C', 1);
-    $pdf->CELL(27, 6, $data['nama'], 1, 0, 'C', 1);
-    $pdf->CELL(23, 6, $data['alamat'], 1, 0, 'C', 1);
-    $pdf->CELL(25, 6, $data['desa'], 1, 0, 'C', 1);
-    $pdf->CELL(25, 6, $data['kec'], 1, 0, 'C', 1);
+    $pdf->CELL(35, 6, $data['nik'], 1, 0, 'C', 1);
+    $pdf->CELL(40, 6, $data['nama'], 1, 0, 'C', 1);
+    $pdf->CELL(50, 6, $data['alamat'], 1, 0, 'C', 1);
+    $pdf->CELL(35, 6, $data['desa'], 1, 0, 'C', 1);
+    $pdf->CELL(30, 6, $data['kec'], 1, 0, 'C', 1);
     $pdf->CELL(30, 6, $data['kab'], 1, 0, 'C', 1);
-    $pdf->CELL(20, 6, $data['prov'], 1, 0, 'C', 1);
+    $pdf->CELL(30, 6, $data['prov'], 1, 0, 'C', 1);
     $pdf->CELL(28, 6, $data['pekerjaan'], 1, 0, 'C', 1);
     $ya = $ya + $row;
     $no++;
