@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 01, 2022 at 12:42 PM
+-- Generation Time: Feb 05, 2022 at 11:26 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.31
 
@@ -28,17 +28,34 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tb_mutasi` (
-  `no_pel` varchar(11) NOT NULL,
-  `jns_pel` varchar(50) NOT NULL,
-  `nop` varchar(50) NOT NULL,
-  `nama_pemohon` varchar(100) NOT NULL,
-  `alamat_pemohon` varchar(150) NOT NULL,
-  `letak_op` varchar(150) NOT NULL,
-  `kel` varchar(150) NOT NULL,
-  `kec` varchar(150) NOT NULL,
+  `no_surat` varchar(50) NOT NULL,
+  `tgl_pengajuan` date NOT NULL,
+  `nik` varchar(18) DEFAULT NULL,
+  `nama` varchar(100) NOT NULL,
+  `alamat` varchar(150) NOT NULL,
+  `pekerjaan` varchar(50) NOT NULL,
+  `tgl_kehilangan` date NOT NULL,
+  `tmpt_kehilangan` varchar(150) NOT NULL,
   `ket` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-COMMIT;
+
+
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tb_mutasi`
+--
+ALTER TABLE `tb_mutasi`
+  ADD PRIMARY KEY (`no_surat`),
+  ADD KEY `nik` (`nik`);
+
+--
+-- Constraints for dumped tables
+--
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
