@@ -111,7 +111,7 @@ $data    = mysqli_fetch_array($query); ?>
                     <font size="3"> <strong>NO.PELAYANAN</strong> </font>
                 </td>
                 <td>
-                    <font size="3">: <?php echo $data['no_pel']; ?></font>
+                    <font size="3">: <b><?php echo $data['no_pel']; ?></font>
                 </td>
             </tr>
             <tr class="text3">
@@ -134,7 +134,7 @@ $data    = mysqli_fetch_array($query); ?>
         </table>
         <table width="550">
             <td align="center">
-                <font size="3">DATA WAJIB/OBJEK PAJAK DAN KETERANGAN</b>.</font>
+                <font size="3"><b>DATA WAJIB/OBJEK PAJAK DAN KETERANGAN</b>.</font>
             </td>
         </table>
         <table width="550">

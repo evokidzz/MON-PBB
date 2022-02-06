@@ -151,4 +151,4 @@ while ($data = mysqli_fetch_array($sql)) {
 }
 $pdf->AliasNbPages();
 ob_clean();
-$pdf->Output('I', 'Data Mutasi.PDF');
+$pdf->Output('I', 'Laporan Data Berkas Mutasi.PDF');

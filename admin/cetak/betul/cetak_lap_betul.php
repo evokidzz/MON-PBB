@@ -68,7 +68,7 @@ $yi = 53;
 $ya = 55;;
 
 $pdf->SetFont('Arial', 'B', 15);
-$pdf->Text(100, 50, 'LAPORAN DATA BERKAS DAFTAR BARU');
+$pdf->Text(100, 50, 'LAPORAN DATA BERKAS PEMBETULAN');
 
 
 
@@ -79,7 +79,7 @@ $pdf->CELL(10, 6, 'NO', 1, 0, 'C', 1);
 $pdf->CELL(27, 6, 'NO.PELAYAN', 1, 0, 'C', 1);
 $pdf->CELL(30, 6, 'TGL.PELAYANAN', 1, 0, 'C', 1);
 $pdf->CELL(35, 6, 'NOP', 1, 0, 'C', 1);
-$pdf->CELL(25, 6, 'NIK', 1, 0, 'C', 1);
+$pdf->CELL(28, 6, 'NIK', 1, 0, 'C', 1);
 $pdf->CELL(45, 6, 'NAMA', 1, 0, 'C', 1);
 $pdf->CELL(45, 6, 'ALAMAT', 1, 0, 'C', 1);
 $pdf->CELL(45, 6, 'LETAK OP', 1, 0, 'C', 1);
@@ -87,7 +87,7 @@ $pdf->CELL(30, 6, 'KET.', 1, 0, 'C', 1);
 
 
 
-$query = "select * from tb_baru";
+$query = "select * from tb_betul";
 $sql = mysqli_query($koneksi, $query);
 $no = 1;
 $row = 6;
@@ -100,7 +100,7 @@ while ($data = mysqli_fetch_array($sql)) {
     $pdf->CELL(27, 6, $data['no_pel'], 1, 0, 'C', 1);
     $pdf->CELL(30, 6, $data['tgl_pel'], 1, 0, 'C', 1);
     $pdf->CELL(35, 6, $data['nop'], 1, 0, 'C', 1);
-    $pdf->CELL(25, 6, $data['nik'], 1, 0, 'C', 1);
+    $pdf->CELL(28, 6, $data['nik'], 1, 0, 'C', 1);
     $pdf->CELL(45, 6, $data['nama'], 1, 0, 'C', 1);
     $pdf->CELL(45, 6, $data['alamat'], 1, 0, 'C', 1);
     $pdf->CELL(45, 6, $data['letak_op'], 1, 0, 'C', 1);
@@ -151,4 +151,4 @@ while ($data = mysqli_fetch_array($sql)) {
 }
 $pdf->AliasNbPages();
 ob_clean();
-$pdf->Output('I', 'Laporan Data Daftar Baru.PDF');
+$pdf->Output('I', 'Laporan Data Berkas Pembetulan.PDF');

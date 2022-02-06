@@ -68,7 +68,7 @@ $yi = 53;
 $ya = 55;;
 
 $pdf->SetFont('Arial', 'B', 15);
-$pdf->Text(100, 50, 'LAPORAN DATA BERKAS DAFTAR BARU');
+$pdf->Text(100, 50, 'LAPORAN DATA BERKAS PENGHAPUSAN');
 
 
 
@@ -87,7 +87,7 @@ $pdf->CELL(30, 6, 'KET.', 1, 0, 'C', 1);
 
 
 
-$query = "select * from tb_baru";
+$query = "select * from tb_hapus";
 $sql = mysqli_query($koneksi, $query);
 $no = 1;
 $row = 6;
@@ -151,4 +151,4 @@ while ($data = mysqli_fetch_array($sql)) {
 }
 $pdf->AliasNbPages();
 ob_clean();
-$pdf->Output('I', 'Laporan Data Daftar Baru.PDF');
+$pdf->Output('I', 'Laporan Data Berkas Penghapusan.PDF');

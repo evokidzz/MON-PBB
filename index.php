@@ -491,13 +491,13 @@ while ($data = $sql->fetch_assoc()) {
 								include "admin/wp/del_wp.php";
 								break;
 
-								//pelayanan umum - wp							
+								//master data - wp							
 							case 'cetak-wp':
 								include "admin/wp/cetak_lap_wp.php";
 								break;
 
 
-								//pelayanan umum - baru							
+								//jenis pelayanan - baru							
 							case 'data-baru':
 								include "admin/surat/baru/data_baru.php";
 								break;
@@ -511,13 +511,13 @@ while ($data = $sql->fetch_assoc()) {
 								include "admin/surat/baru/edit_baru.php";
 								break;
 
-								//pelayanan umum - cetak baru							
+								//jenis pelayanan - cetak baru							
 							case 'cetak-baru':
 								include "admin/cetak/baru/cetak_baru.php";
 								break;
 
 
-								//pelayanan umum - mutasi
+								//jenis pelayanan - mutasi
 							case 'data-mutasi':
 								include "admin/surat/mutasi/data_mutasi.php";
 								break;
@@ -531,19 +531,68 @@ while ($data = $sql->fetch_assoc()) {
 								include "admin/surat/mutasi/edit_mutasi.php";
 								break;
 
-								//pelayanan umum - cetak mutasi							
+								//jenis pelayanan - cetak mutasi							
 							case 'cetak-mutasi':
 								include "admin/cetak/mutasi/cetak_mutasi.php";
 								break;
 
+								//jenis pelayanan - hapus
+							case 'data-hapus':
+								include "admin/surat/hapus/data_hapus.php";
+								break;
+							case 'add-hapus':
+								include "admin/surat/hapus/add_hapus.php";
+								break;
+							case 'del-hapus':
+								include "admin/surat/hapus/del_hapus.php";
+								break;
+							case 'edit-hapus':
+								include "admin/surat/hapus/edit_hapus.php";
+								break;
 
-								//Profil
-							case 'data-profil':
-								include "admin/profil/data_profil.php";
+								//jenis pelayanan - cetak hapus							
+							case 'cetak-hapus':
+								include "admin/cetak/hapus/cetak_hapus.php";
 								break;
-							case 'edit-profil':
-								include "admin/profil/edit_profil.php";
+
+								//jenis pelayanan - betul
+							case 'data-betul':
+								include "admin/surat/betul/data_betul.php";
 								break;
+							case 'add-betul':
+								include "admin/surat/betul/add_betul.php";
+								break;
+							case 'del-betul':
+								include "admin/surat/betul/del_betul.php";
+								break;
+							case 'edit-betul':
+								include "admin/surat/betul/edit_betul.php";
+								break;
+
+								//jenis pelayanan - cetak betul							
+							case 'cetak-betul':
+								include "admin/cetak/betul/cetak_betul.php";
+								break;
+
+								//jenis pelayanan - salinan
+							case 'data-salinan':
+								include "admin/surat/salinan/data_salinan.php";
+								break;
+							case 'add-salinan':
+								include "admin/surat/salinan/add_salinan.php";
+								break;
+							case 'del-salinan':
+								include "admin/surat/salinan/del_salinan.php";
+								break;
+							case 'edit-salinan':
+								include "admin/surat/salinan/edit_salinan.php";
+								break;
+
+								//jenis pelayanan - cetak salinan							
+							case 'cetak-salinan':
+								include "admin/cetak/salinan/cetak_salinan.php";
+								break;
+
 
 								//pejabat
 							case 'data-pejabat':

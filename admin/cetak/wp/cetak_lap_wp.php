@@ -79,7 +79,7 @@ $pdf->CELL(10, 6, 'NO', 1, 0, 'C', 1);
 $pdf->CELL(25, 6, 'NIK/NPWP', 1, 0, 'C', 1);
 $pdf->CELL(50, 6, 'NAMA', 1, 0, 'C', 1);
 $pdf->CELL(50, 6, 'ALAMAT', 1, 0, 'C', 1);
-$pdf->CELL(35, 6, 'DESA', 1, 0, 'C', 1);
+$pdf->CELL(35, 6, 'DESA/KELURAHAN', 1, 0, 'C', 1);
 $pdf->CELL(30, 6, 'KECAMATAN', 1, 0, 'C', 1);
 $pdf->CELL(30, 6, 'KABUPATEN', 1, 0, 'C', 1);
 $pdf->CELL(30, 6, 'PROVINSI', 1, 0, 'C', 1);
