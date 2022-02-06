@@ -40,7 +40,7 @@ if (isset($_GET['kode'])) {
             </div>
 
             <div class="form-group row">
-                <label class="col-sm-2 col-form-label" for="desa">DESA</label>
+                <label class="col-sm-2 col-form-label" for="desa">DESA/KELURAHAN</label>
                 <div class="col-md-6">
                     <input type="text" class="form-control" id="desa" name="desa" value="<?php echo $data_cek['desa']; ?>">
                 </div>
