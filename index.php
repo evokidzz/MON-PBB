@@ -594,6 +594,14 @@ while ($data = $sql->fetch_assoc()) {
 								break;
 
 
+								//profile
+							case 'data-profile':
+								include "profil/data_profile.php";
+								break;
+							case 'edit-profile':
+								include "profil/edit_profile.php";
+								break;
+
 								//pejabat
 							case 'data-pejabat':
 								include "home/data_pejabat.php";
