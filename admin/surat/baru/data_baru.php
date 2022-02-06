@@ -59,7 +59,7 @@ $data = mysqli_fetch_array($sql_per_id); { ?>
                   <a href="?page=edit-baru&kode=<?php echo $data['id_baru']; ?>" title="Edit" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
                   <a href="?page=del-baru&kode=<?php echo $data['id_baru']; ?>" onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus" class="btn btn-danger btn-sm">
                     <i class="fa fa-trash"></i> </a>
-                  <a href="admin\cetak\baru\contoh_surat_baru.php?no_surat=<?= $data['id_baru'] ?>" target="_blank" title="Cetak" class="btn btn-success btn-sm">
+                  <a href="admin\cetak\baru\cetak_con_baru.php?id_berkas=<?= $data['id_baru'] ?>" target="_blank" title="Cetak" class="btn btn-success btn-sm">
                     <i class="fa fa-print"></i>
                   </a>
                   </a>
