@@ -68,7 +68,7 @@ $yi = 53;
 $ya = 55;;
 
 $pdf->SetFont('Arial', 'B', 15);
-$pdf->Text(115, 50, 'LAPORAN DATA PEJABAT');
+$pdf->Text(135, 50, 'DATA PEJABAT');
 
 
 
