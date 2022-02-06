@@ -626,7 +626,7 @@ while ($data = $sql->fetch_assoc()) {
 					} else {
 						// Auto Halaman Home Pengguna
 						if ($data_level == "Administrator") {
-							include "home/data_pejabat.php";
+							include "home/admin.php";
 						} elseif ($data_level == "Sekretaris") {
 							include "home/Sekretaris.php";
 						}
