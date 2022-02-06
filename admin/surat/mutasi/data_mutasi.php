@@ -1,10 +1,10 @@
 <?php
 $id = @$_GET['id'];
-$sql_per_id = mysqli_query($koneksi, "SELECT * FROM tb_mutasi WHERE no_pel = '$id'") or die($db->error);
+$sql_per_id = mysqli_query($koneksi, "SELECT * FROM tb_mutasi WHERE id_mutasi = '$id'") or die($db->error);
 $data = mysqli_fetch_array($sql_per_id); { ?>
 
 
-  <div class="card card-info">
+  <div class="card card-dark">
     <div class="card-header">
       <h3 class="card-title">
         <i class="fa fa-table"></i> Data Berkas Daftar Mutasi
@@ -59,12 +59,12 @@ $data = mysqli_fetch_array($sql_per_id); { ?>
                 <td><?php echo $data['ket']; ?></td>
                 <td class="text-center">
                   </a>
-                  <a href="?page=edit-mutasi&kode=<?php echo $data['no_pel']; ?>" title="Ubah" class="btn btn-success btn-sm">
-                    <i class="fa fa-wrench"></i>
+                  <a href="?page=edit-mutasi&kode=<?php echo $data['id_mutasi']; ?>" title="Ubah" class="btn btn-info btn-sm">
+                    <i class="fa fa-edit"></i>
                   </a>
-                  <a href="?page=del-mutasi&kode=<?php echo $data['no_pel']; ?>" onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus" class="btn btn-danger btn-sm">
+                  <a href="?page=del-mutasi&kode=<?php echo $data['id_mutasi']; ?>" onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus" class="btn btn-danger btn-sm">
                     <i class="fa fa-trash"></i></a>
-                  <a href="admin\cetak\mutasi\contoh_surat_mutasi.php?no_pel=<?= $data['no_pel'] ?>" target="_blank" title="Cetak" class="btn btn-success btn-sm">
+                  <a href="admin\cetak\mutasi\contoh_surat_mutasi.php?id_mutasi=<?= $data['id_mutasi'] ?>" target="_blank" title="Cetak" class="btn btn-success btn-sm">
                     <i class="fa fa-print"></i>
                   </a>
                 </td>
