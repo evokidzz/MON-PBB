@@ -537,66 +537,6 @@ while ($data = $sql->fetch_assoc()) {
 								break;
 
 
-
-								//pelayanan umum - ket.usaha
-							case 'data-usaha':
-								include "admin/surat/usaha/data_usaha.php";
-								break;
-							case 'add-usaha':
-								include "admin/surat/usaha/add_usaha.php";
-								break;
-							case 'del-usaha':
-								include "admin/surat/usaha/del_usaha.php";
-								break;
-							case 'edit-usaha':
-								include "admin/surat/usaha/edit_usaha.php";
-								break;
-
-								//pelayanan umum - cetak tidak mampu							
-							case 'cetak-usaha':
-								include "admin/cetak/usaha/cetak_usaha.php";
-								break;
-
-								//pelayanan umum - ket.kematian
-							case 'data-kematian':
-								include "admin/surat/kematian/data_kematian.php";
-								break;
-							case 'add-kematian':
-								include "admin/surat/kematian/add_kematian.php";
-								break;
-							case 'del-kematian':
-								include "admin/surat/kematian/del_kematian.php";
-								break;
-							case 'edit-kematian':
-								include "admin/surat/kematian/edit_kematian.php";
-								break;
-
-								//pelayanan umum - cetak kematian							
-							case 'cetak-kematian':
-								include "admin/cetak/kematian/cetak_kematian.php";
-								break;
-
-								//pelayanan umum - ket.kehilangan
-							case 'data-kehilangan':
-								include "admin/surat/kehilangan/data_kehilangan.php";
-								break;
-							case 'add-kehilangan':
-								include "admin/surat/kehilangan/add_kehilangan.php";
-								break;
-							case 'del-kehilangan':
-								include "admin/surat/kehilangan/del_kehilangan.php";
-								break;
-							case 'edit-kehilangan':
-								include "admin/surat/kehilangan/edit_kehilangan.php";
-								break;
-
-								//pelayanan umum - cetak kehilangan							
-							case 'cetak-kehilangan':
-								include "admin/cetak/kehilangan/cetak_kehilangan.php";
-								break;
-
-
-
 								//Profil
 							case 'data-profil':
 								include "admin/profil/data_profil.php";
