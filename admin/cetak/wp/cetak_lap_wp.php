@@ -68,7 +68,7 @@ $yi = 53;
 $ya = 55;;
 
 $pdf->SetFont('Arial', 'B', 15);
-$pdf->Text(115, 50, 'LAPORAN DATA PENDUDUK');
+$pdf->Text(125, 50, 'DATA WAJIB PAJAK');
 
 
 
@@ -76,8 +76,8 @@ $pdf->SetFont('Arial', 'B', 8);
 $pdf->setFillColor(222, 222, 222);
 $pdf->setXY(8, 53);
 $pdf->CELL(10, 6, 'NO', 1, 0, 'C', 1);
-$pdf->CELL(35, 6, 'NIK/NPWP', 1, 0, 'C', 1);
-$pdf->CELL(40, 6, 'NAMA', 1, 0, 'C', 1);
+$pdf->CELL(25, 6, 'NIK/NPWP', 1, 0, 'C', 1);
+$pdf->CELL(50, 6, 'NAMA', 1, 0, 'C', 1);
 $pdf->CELL(50, 6, 'ALAMAT', 1, 0, 'C', 1);
 $pdf->CELL(35, 6, 'DESA', 1, 0, 'C', 1);
 $pdf->CELL(30, 6, 'KECAMATAN', 1, 0, 'C', 1);
@@ -97,8 +97,8 @@ while ($data = mysqli_fetch_array($sql)) {
     $pdf->setFont('Times', '', 9);
     $pdf->setFillColor(255, 255, 255);
     $pdf->CELL(10, 6, $no, 1, 0, 'C', 1);
-    $pdf->CELL(35, 6, $data['nik'], 1, 0, 'C', 1);
-    $pdf->CELL(40, 6, $data['nama'], 1, 0, 'C', 1);
+    $pdf->CELL(25, 6, $data['nik'], 1, 0, 'C', 1);
+    $pdf->CELL(50, 6, $data['nama'], 1, 0, 'C', 1);
     $pdf->CELL(50, 6, $data['alamat'], 1, 0, 'C', 1);
     $pdf->CELL(35, 6, $data['desa'], 1, 0, 'C', 1);
     $pdf->CELL(30, 6, $data['kec'], 1, 0, 'C', 1);
