@@ -596,11 +596,12 @@ while ($data = $sql->fetch_assoc()) {
 
 								//profile
 							case 'data-profil':
-								include "profil/data_profil.php";
+								include "admin/profil/data_profil.php";
 								break;
 							case 'edit-profil':
-								include "profil/edit_profil.php";
+								include "admin/profil/edit_profil.php";
 								break;
+
 
 								//pejabat
 							case 'data-pejabat':
