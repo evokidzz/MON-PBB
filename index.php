@@ -492,7 +492,7 @@ while ($data = $sql->fetch_assoc()) {
 								break;
 
 								//pelayanan umum - wp							
-							case 'cetak-baru':
+							case 'cetak-wp':
 								include "admin/wp/cetak_lap_wp.php";
 								break;
 
