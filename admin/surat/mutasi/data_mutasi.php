@@ -64,7 +64,7 @@ $data = mysqli_fetch_array($sql_per_id); { ?>
                   </a>
                   <a href="?page=del-mutasi&kode=<?php echo $data['id_mutasi']; ?>" onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus" class="btn btn-danger btn-sm">
                     <i class="fa fa-trash"></i></a>
-                  <a href="admin\cetak\mutasi\contoh_surat_mutasi.php?id_mutasi=<?= $data['id_mutasi'] ?>" target="_blank" title="Cetak" class="btn btn-success btn-sm">
+                  <a href="admin\cetak\mutasi\cetak_con_mutasi.php?id_berkas=<?= $data['id_mutasi'] ?>" target="_blank" title="Cetak" class="btn btn-success btn-sm">
                     <i class="fa fa-print"></i>
                   </a>
                 </td>
