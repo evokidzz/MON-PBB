@@ -18,7 +18,6 @@
                         <th>No.</th>
                         <th class="text-center">Nama</th>
                         <th class="text-center">Jabatan</th>
-                        <th class="text-center">Kelola</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,14 +35,6 @@
                             </td>
                             <td>
                                 <?php echo $data['jabatan']; ?>
-                            </td>
-
-                            <td class="text-center">
-                                <a href="?page=edit-pejabat&kode=<?php echo $data['id_pejabat']; ?>" title="Ubah" class="btn btn-success btn-sm">
-                                    <i class="fa fa-wrench"></i>
-                                </a>
-                                <a href="?page=del-pejabat&kode=<?php echo $data['nik']; ?>" onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus" class="btn btn-danger btn-sm">
-                                    <i class="fa fa-trash"></i>
                             </td>
                         </tr>
 
