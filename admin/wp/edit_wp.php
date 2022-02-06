@@ -9,7 +9,7 @@ if (isset($_GET['kode'])) {
 
 ?>
 
-<div class="card card-primary">
+<div class="card card-dark">
     <div class="card-header">
         <h3 class="card-title">
             <i class="fa fa-edit"></i> Ubah Data Wajib Pajak
@@ -49,7 +49,7 @@ if (isset($_GET['kode'])) {
 
             <div class="form-group row">
                 <label class="col-sm-2 col-form-label" for="kec">KECAMATAN</label>
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <input type="text" class="form-control" id="kec" name="kec" value="<?php echo $data_cek['kec']; ?>">
                 </div>
             </div>
