@@ -55,11 +55,12 @@ $data = mysqli_fetch_array($sql_per_id); { ?>
                 <td><?php echo $data['kab']; ?></td>
                 <td><?php echo $data['prov']; ?></td>
                 <td><?php echo $data['pekerjaan']; ?></td>
-                <td>
+                <td class="text-center">
                   </a>
                   <a href="?page=edit-wp&kode=<?php echo $data['nik']; ?>" title="Edit" class="btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
                   <a href="?page=del-wp&kode=<?php echo $data['nik']; ?>" onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus" class="btn btn-danger btn-sm">
                     <i class="fa fa-trash"></i>
+                  </a>
                 </td>
               </tr>
 
