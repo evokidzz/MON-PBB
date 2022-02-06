@@ -35,7 +35,7 @@ include "inc/koneksi.php";
 				<div class="login-logo">
 					<a href="login.php">
 						<font color="black">
-							<b>MonPel PBB-P2</b></br><b> BPKPAD </b>
+							<b>MonPel PBB-P2</b></br><b> BAPENDA </b>
 						</font>
 					</a>
 				</div>

@@ -628,7 +628,7 @@ while ($data = $sql->fetch_assoc()) {
 						if ($data_level == "Administrator") {
 							include "home/data_pejabat.php";
 						} elseif ($data_level == "Sekretaris") {
-							include "home/data_pejabat.php";
+							include "home/Sekretaris.php";
 						}
 					}
 					?>

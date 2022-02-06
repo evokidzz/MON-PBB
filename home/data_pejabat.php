@@ -1,7 +1,7 @@
 <div class="card card-dark">
 	<div class="card-header">
 		<h3 class="card-title">
-			<i class="fa fa-table"></i> Nama Pejabat BAPENDA
+			<i class="fa fa-table"></i> Daftar Pejabat BAPENDA
 		</h3>
 	</div>
 	<!-- /.card-header -->
