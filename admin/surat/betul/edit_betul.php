@@ -94,7 +94,7 @@ if (isset($_GET['kode'])) {
         </div>
         <div class="card-footer">
             <input type="submit" name="Ubah" value="Ubah" class="btn btn-info">
-            <a href="?page=data-hapus" title="Kembali" class="btn btn-secondary">Batal</a>
+            <a href="?page=data-betul" title="Kembali" class="btn btn-secondary">Batal</a>
         </div>
     </form>
 </div>
