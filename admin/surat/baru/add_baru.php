@@ -90,8 +90,6 @@
 
 if (isset($_POST['Simpan'])) {
 
-  $validatesql ="SELECT "
-
   $sql_simpan = "INSERT INTO tb_baru (no_pel,tgl_pel,nop,nik,nama,alamat,letak_op,kel,kec,ket) VALUES (
     '" . $_POST['no_pel'] . "',
     '" . $_POST['tgl_pel'] . "',
@@ -104,12 +102,8 @@ if (isset($_POST['Simpan'])) {
     '" . $_POST['kec'] . "',
     '" . $_POST['ket'] . "')";
 
-  if ($_POST['no_pel']->rowCount() > 0) {
-    echo "No.Pelayanan Sdh Ada";
-  } else {
-    $query_simpan = mysqli_query($koneksi, $sql_simpan);
-    mysqli_close($koneksi);
-  }
+  $query_simpan = mysqli_query($koneksi, $sql_simpan);
+  mysqli_close($koneksi);
 
   if ($query_simpan) {
     echo "<script>
