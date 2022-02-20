@@ -1,4 +1,4 @@
-<div class="card card-primary">
+<div class="card card-dark">
 	<div class="card-header">
 		<h3 class="card-title">
 			<i class="fa fa-edit"></i> Tambah Data Daftar Mutasi
@@ -73,7 +73,7 @@
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label" for="ket">KETERANGAN</label>
 				<div class="col-sm-6">
-					<input type="text" class="form-control" id="ket" name="ket" placeholder="KETERANGAN" required>
+					<input type="text" class="form-control" id="ket" name="ket" placeholder="CONTOH : PEROANGAN/KOLEKTIF" required>
 				</div>
 			</div>
 
