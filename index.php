@@ -614,7 +614,7 @@ while ($data = $sql->fetch_assoc()) {
 								include "home/edit_pejabat.php";
 								break;
 							case 'del-pejabat':
-								include "home/pejabat/del_pejabat.php";
+								include "home/del_pejabat.php";
 								break;
 
 
