@@ -44,7 +44,7 @@
 								<a href="?page=edit-pejabat&kode=<?php echo $data['id_pejabat']; ?>" title="Ubah" class="btn btn-success btn-sm">
 									<i class="fa fa-wrench"></i>
 								</a>
-								<a href="?page=del-pejabat&kode=<?php echo $data['nik']; ?>" onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus" class="btn btn-danger btn-sm">
+								<a href="?page=del-pejabat&kode=<?php echo $data['id_pejabat']; ?>" onclick="return confirm('Apakah anda yakin hapus data ini ?')" title="Hapus" class="btn btn-danger btn-sm">
 									<i class="fa fa-trash"></i>
 							</td>
 						</tr>
